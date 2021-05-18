@@ -25,9 +25,11 @@ function read_data(pageNumber){
                 var temp = response.data[i];
                 var row = `<tr>
                   <td>${temp.id}</td>
-                  <td>${temp.email}</td>
                   <td>${temp.first_name}</td>
                   <td>${temp.last_name}</td>
+                  <td>${temp.email}</td>
+                  
+                 
                   <td><img src="${temp.avatar}" width="100" height="100"></td>
                   </tr>
                   `
