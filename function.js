@@ -1,6 +1,6 @@
 $(function(){
     
-    
+    read_data(1);
     $("#page1").click(function(){
         read_data(1);
     });
@@ -28,6 +28,7 @@ function read_data(pageNumber){
                   <td>${temp.email}</td>
                   <td>${temp.first_name}</td>
                   <td>${temp.last_name}</td>
+                  <td><img src="${temp.avatar}" width="100" height="100"></td>
                   </tr>
                   `
                   user.append(row);
